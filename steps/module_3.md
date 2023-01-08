@@ -224,7 +224,12 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-8) Call our endpoints - Here are the requests we can make to our new endpoint.
+8)  Use docker from now on, run below command for docker compose:
+```
+docker-compose up -d --build
+```
+
+ Call our endpoints - Here are the requests we can make to our new endpoint.
 
 >Note: change 'localhost' to 'api' if you make the calls via Docker Decktop.
 
