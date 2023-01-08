@@ -15,7 +15,7 @@ drf_course\  <--This is the root directory
         >requirements.txt
     steps\
         ...
-    >.gitignore
+    >.gitignore 
     >docker-compose.yml
     >env.template
     >README.md
@@ -44,6 +44,9 @@ venv\Scripts\activate.bat
 
 #mac/linux
 source venv/bin/activate
+#fish 
+. venv/bin/activate.fish
+
 ```
 You will know your virtual environment is active when your terminal displays the following:
 ```
