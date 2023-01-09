@@ -76,11 +76,11 @@ We will build an e-commerce app with an item and order endpoint. Users will be a
 
 We need models, routers, serializers and view-sets/api-view! Let's not waist any time...
 
-1) Model - Go ahead and open /ecommerce/models.py and paste in the following code.
+1) UuidModel - Go ahead and open /ecommerce/models.py and paste in the following code.
 ```
 from django.db import models
 from django.contrib.auth.models import User
-from utils.model_abstracts import Model
+from utils.model_abstracts import UuidModel
 from django_extensions.db.models import (
     TimeStampedModel,
     ActivatorModel,
@@ -92,7 +92,7 @@ class Item(
     TimeStampedModel,
     ActivatorModel ,
     TitleSlugDescriptionModel,
-    Model):
+    UuidModel):
 
     """
     ecommerce.Item
@@ -146,7 +146,7 @@ class Item(
 class Order(
     TimeStampedModel,
     ActivatorModel ,
-    Model):
+    UuidModel):
     """
     ecommerce.Order
     Stores a single order entry, related to :model:`ecommerce.Item` and

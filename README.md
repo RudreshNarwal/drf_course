@@ -3,6 +3,7 @@ Welcome to this full Django Rest Framework (DRF)course.
 This course is perfect if you are looking to learn DRF and build your own API application.
 ***
 ***
+## YouTube link
 https://www.youtube.com/watch?v=tujhGdn1EMI&list=LL&index=1&t=817s
 
 ## Prerequisites

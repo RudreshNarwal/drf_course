@@ -65,11 +65,11 @@ d) a view to encapsulates the common REST HTTP method calls
 
 easy, right?
 
-1) Model - Go ahead and open /core/models.py and paste in the following code.
+1) UuidModel - Go ahead and open /core/models.py and paste in the following code.
 ```
 
 from django.db import models
-from utils.model_abstracts import Model
+from utils.model_abstracts import UuidModel
 from django_extensions.db.models import (
 	TimeStampedModel, 
 	ActivatorModel,
@@ -80,7 +80,7 @@ class Contact(
 	TimeStampedModel, 
 	ActivatorModel,
 	TitleDescriptionModel,
-	Model
+	UuidModel
 	):
 
 	class Meta:
@@ -102,7 +102,7 @@ import uuid
 from django.db import models
 
 
-class Model(models.Model):
+class UuidModel(models.UuidModel):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
 
     class Meta:

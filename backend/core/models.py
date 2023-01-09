@@ -1,5 +1,5 @@
 from django.db import models
-from ..utils.model_abstracts import Model
+from utils.model_abstracts import UuidModel
 from django_extensions.db.models import (
     TimeStampedModel,
     ActivatorModel,
@@ -11,7 +11,7 @@ class Contact(
     TimeStampedModel,
     ActivatorModel,
     TitleDescriptionModel,
-    Model
+    UuidModel
 ):
     class Meta:
         verbose_name_plural = "Contacts"
