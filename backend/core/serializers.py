@@ -15,3 +15,7 @@ class ContactSerializer(serializers.ModelSerializer):
             'email',
             'message'
         )
+        
+
+# Model fields are used within the database i.e while creating the schema, visible to the developer only.
+# while Serializer fields are used to when exposing the api to the client, visible to client also.

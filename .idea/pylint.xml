@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PylintConfigService">
+    <option name="customPylintPath" value="/usr/local/Cellar/python@3.10/3.10.8/Frameworks/Python.framework/Versions/3.10/bin/python3.10" />
+  </component>
+</project>
